@@ -1,0 +1,85 @@
+1.
+
+START
+
+// Define variables
+Define milesDriven
+Define gallonsUsed
+Define milesPerGallon
+
+// Get input
+Print "Enter miles driven:"
+Input = milesDriven
+
+Print "Enter gallons used:"
+Input = gallonsUsed
+
+// Calculate and display
+If gallonsUsed > 0 Then
+    milesPerGallon = milesDriven / gallonsUsed
+    Print "Miles per gallon:", milesPerGallon
+Else
+    Print "Error: Gallons used cannot be zero."
+
+END
+_________________________________________________________________________________________________
+
+2. 
+
+START
+
+//Define variables
+Define monthlyRent
+Define daysInMonth
+Define dailyCost
+
+// Get input
+Print "How much is you rent payment monthly?: "
+Input = monthlyRent
+
+//Calculate
+dailyCost = monthlyRent / 30
+
+//Display
+Print "Daily cost of rent: " + dailyCost
+
+END
+
+__________________________________________________________________________________________________
+
+
+3.
+
+START
+
+// Define variables
+Define monthlyPay 
+Define rent 
+Define utilities 
+Define groceries
+Define totalBills 
+Define leftover 
+
+// Get input from the user
+Print "Enter your monthly pay:"
+Input = monthlyPay
+
+Print "Enter your rent:"
+Input = rent
+
+Print "Enter your utilities:"
+Input = utilities
+
+Print "Enter your grocery bills:"
+Input = groceries
+
+// Calculate total bills and leftover
+totalBills = rent + utilities + groceries
+leftover = monthlyPay - totalBills
+
+// Display results
+Print "Monthly Pay:" + monthlyPay
+Print "Total Bills:" + totalBills
+Print "Discretionary Amount:" + leftover
+
+END

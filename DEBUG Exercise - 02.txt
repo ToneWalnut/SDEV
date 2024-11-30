@@ -1,0 +1,38 @@
+
+
+start
+   Declarations
+      string name
+      num hours
+      num rate
+      num DEDUCTION = 45
+      string EOFNAME = "ZZZ"
+      num gross
+      num net
+   output "Enter first name or ", EOFNAME, " to quit"
+   input name
+
+   // Continue loop until user enters EOFNAME
+   while name not equal to EOFNAME do
+      output "Enter hours worked for ", name
+      input hours
+      output "Enter hourly rate for ", name
+      input rate
+      
+      gross = hours * rate
+      net = gross - DEDUCTION
+      
+      // Check if net pay is enough to cover the deduction
+      if net > 0 then
+         output "Net pay for ", name, " is $", net
+      else
+         output "Deductions not covered. Net is $0."
+      endif
+
+      // Prompt for next employee or EOFNAME to quit
+      output "Enter next name or ", EOFNAME, " to quit"
+      input name
+   endwhile
+
+   output "End of job"
+stop

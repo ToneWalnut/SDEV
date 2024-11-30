@@ -1,0 +1,31 @@
+
+
+start
+   Declarations
+      num firstTest
+      num secondTest
+      num average
+      num PASSING = 60
+
+   output "Enter first score or 0 to quit "
+   input firstTest  // Prompt user for first score
+
+   while firstTest <> 0  // Check if firstTest is not 0 to continue the loop
+      output "Enter second score "
+      input secondTest  // Get the second score from the user
+
+      average = (firstTest + secondTest) / 2  // Correct average calculation with parentheses
+      output "Average is ", average  // Display the average
+
+      if average >= PASSING then
+         output "Pass"  // If average is 60 or more, it's a pass
+      else
+         output "Fail"  // Otherwise, it's a fail
+      endif
+
+      output "Enter first score or 0 to quit "  // Ask for the next first score
+      input firstTest  // Get the next first score, or 0 to quit the loop
+   endwhile
+
+stop
+
